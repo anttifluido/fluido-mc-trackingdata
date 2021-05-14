@@ -31,9 +31,12 @@ module.exports = {
           clientSecret: clientsecret
         },
         soapEndpoint: process.env.API_URL,
-          authUrl:process.env.API_URL+'/v2/token'
+           authUrl: authOrigin + 'v2/token',
+           authOptions: {
+            authVersion: 2
+        },
       };
-
+        
       // SDK
       var SoapClient = new FuelSoap(options);
         console.log('SoapClient=> ',SoapClient);
