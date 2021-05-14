@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Returns tracking data for a contact",
   "engines": {
-    "node": "8.9.1"
+    "node": "^8.9.1"
   },
   "main": "index.js",
   "scripts": {
