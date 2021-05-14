@@ -31,10 +31,11 @@ module.exports = {
           clientSecret: clientsecret
         },
         soapEndpoint: process.env.API_URL,
-           authUrl: authOrigin + 'v2/token',
+           authUrl: process.env.API_URL + 'v2/token',
            authOptions: {
             authVersion: 2
         },
+           origin: origin 
       };
         
       // SDK
