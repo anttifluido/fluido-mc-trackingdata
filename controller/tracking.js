@@ -30,9 +30,9 @@ module.exports = {
               clientId: clientid,
               clientSecret: clientsecret,
               authOptions: { authVersion: 2},
-              authUrl: 'https://auth.exacttargetapis.com/v2/requestToken',
+              authUrl: process.env.BASE_AUTH_URI+'v2/token',
             },
-        soapEndpoint: 'https://mcc-sn040t9fn13dzkg645pl21z1.soap.marketingcloudapis.com/Service.asmx',
+        soapEndpoint: process.env.BASE_SOAP_URI+'Service.asmx',
       };
         
         
