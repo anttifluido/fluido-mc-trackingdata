@@ -6,12 +6,28 @@ module.exports = {
     var contactKey = req.query.contactkey;
 
     const FuelRest = require('fuel-rest');
+    
+    
+     var options = {
+        auth: {
+              clientId: clientid,
+              clientSecret: clientsecret,
+              authOptions: { authVersion: 2},
+              authUrl: process.env.BASE_AUTH_URI+'v2/token',
+            },
+        soapEndpoint: process.env.BASE_SOAP_URI+'Service.asmx',
+      };
+    
+    
+    
     const optionsRest = {
       auth: {
         clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET
+        clientSecret: process.env.CLIENT_SECRET,
+        authOptions: { authVersion: 2},
+        authUrl: process.env.BASE_AUTH_URI+'v2/token',
       },
-      //origin: 'https://webservice.s10.exacttarget.com/Service.asmx' // default --> https://www.exacttargetapis.com
+      restEndpoint: process.env.BASE_REST_URI+'Service.asmx',
     };
 
     const RestClient = new FuelRest(optionsRest);
