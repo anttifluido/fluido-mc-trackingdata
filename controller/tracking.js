@@ -38,7 +38,7 @@ module.exports = {
         
       // SDK
       var SoapClient = new FuelSoap(options);
-        console.log('SoapClient=> ',SoapClient);
+     
 
       // search by SubscriberKey
       var reqoptions = {
