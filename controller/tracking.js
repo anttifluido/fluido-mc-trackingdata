@@ -31,7 +31,7 @@ module.exports = {
           clientSecret: clientsecret
         },
         soapEndpoint: process.env.API_URL,
-           authUrl: process.env.API_URL + 'v2/token',
+           authUrl: 'https://mcc-sn040t9fn13dzkg645pl21z1.auth.marketingcloudapis.com/v2/token',
            authOptions: {
             authVersion: 2
         },
