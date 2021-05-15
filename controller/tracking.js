@@ -35,7 +35,7 @@ module.exports = {
            authOptions: {
             authVersion: 2
         },
-           origin: origin 
+           origin: 'https://fluido-mtv-mc-gdpr.herokuapp.com' 
       };
         
       // SDK
