@@ -27,16 +27,14 @@ module.exports = {
        
       var options = {
         auth: {
-          clientId: clientid,
-          clientSecret: clientsecret
-        },
-        soapEndpoint: process.env.API_URL,
-           authUrl: 'https://mcc-sn040t9fn13dzkg645pl21z1.auth.marketingcloudapis.com/v2/token',
-           authOptions: {
-            authVersion: 2
-        },
-           origin: 'https://fluido-mtv-mc-gdpr.herokuapp.com' 
+              clientId: clientid,
+              clientSecret: clientsecret,
+              authOptions: { authVersion: 2},
+              authUrl: 'https://auth.exacttargetapis.com/v2/requestToken',
+            },
+        soapEndpoint:'https://mcc-sn040t9fn13dzkg645pl21z1.soap.marketingcloudapis.com',
       };
+        
         
       // SDK
       var SoapClient = new FuelSoap(options);
