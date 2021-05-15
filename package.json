@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Returns tracking data for a contact",
   "engines": {
-    "node": "^8.9.1"
+  "node": "14.x"
   },
   "main": "index.js",
   "scripts": {
@@ -11,16 +11,16 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.6",
-    "jwt-simple": "^0.5.1",
-    "express": "^4.15.2",
-    "fuel-rest": "^3.0.3",
+    "body-parser": "^1.18.0",
+    "ejs": "^3.1.6",
+    "jwt-simple": "^0.5.6",
+    "express": "^4.17.1",
+    "fuel-rest": "^3.2.2",
     "fuel-soap": "^2.2.4"
   },
   "devDependencies": {
-    "request": "^2.81.0",
-    "tape": "^4.7.0"
+    "request": "^2.88.2",
+    "tape": "^5.2.2"
   },
   "repository": {
     "type": "git",
