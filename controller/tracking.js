@@ -32,7 +32,7 @@ module.exports = {
               authOptions: { authVersion: 2},
               authUrl: 'https://auth.exacttargetapis.com/v2/requestToken',
             },
-        soapEndpoint:'https://mcc-sn040t9fn13dzkg645pl21z1.soap.marketingcloudapis.com',
+        soapEndpoint: 'https://mcc-sn040t9fn13dzkg645pl21z1.soap.marketingcloudapis.com/Service.asmx',
       };
         
         
