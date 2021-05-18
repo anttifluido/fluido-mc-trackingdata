@@ -8,18 +8,6 @@ module.exports = {
     const FuelRest = require('fuel-rest');
     
     
-     var options = {
-        auth: {
-              clientId: clientid,
-              clientSecret: clientsecret,
-              authOptions: { authVersion: 2},
-              authUrl: process.env.BASE_AUTH_URI+'v2/token',
-            },
-        soapEndpoint: process.env.BASE_SOAP_URI+'Service.asmx',
-      };
-    
-    
-    
     const optionsRest = {
       auth: {
         clientId: process.env.CLIENT_ID,
